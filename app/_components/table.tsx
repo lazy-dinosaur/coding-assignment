@@ -147,7 +147,7 @@ const renderCellContent = (
 	if (content === null || content === undefined)
 		return (
 			<td
-				className="border-r-[#8A8A8A] border-b-[1px] border-r-[0.67px] last:border-black last:border-r-[1px] bg-white"
+				className="border-r-[#8A8A8A] border-b-[1px] border-r-[0.69px] last:border-black last:border-r-[1px] bg-white"
 				key={`${idx}-${colKey}`}
 			/>
 		);
@@ -156,7 +156,7 @@ const renderCellContent = (
 		return (
 			<td
 				key={`${idx}-${colKey}`}
-				className="text-[7px] @2xs:text-[8px] @xs:text-[9px] @sm:text-[11px] @md:text-[13px] border-r-[#8A8A8A] border-b-[1px] border-r-[0.67px] last:border-black last:border-r-[1px] bg-white"
+				className="text-[7px] @2xs:text-[8px] @xs:text-[9px] @sm:text-[11px] @md:text-[13px] border-r-[#8A8A8A] border-b-[1px] border-r-[0.69px] last:border-black last:border-r-[1px] bg-white"
 			>
 				{content}
 			</td>
@@ -169,8 +169,8 @@ const renderCellContent = (
 				key={`${idx}-${colKey}`}
 				className={
 					idx == 1
-						? "border-r-[#8A8A8A] border-b-[#9B9B9B] border-b-[0.67px] border-r-[0.67px] last:border-black last:border-r-[1px] bg-white"
-						: "border-r-[#8A8A8A] border-b-[1px] border-r-[0.67px] last:border-black last:border-r-[1px] bg-white"
+						? "border-r-[#8A8A8A] border-b-[#9B9B9B] border-b-[0.69px] border-r-[0.69px] last:border-black last:border-r-[1px] bg-white"
+						: "border-r-[#8A8A8A] border-b-[1px] border-r-[0.69px] last:border-black last:border-r-[1px] bg-white"
 				}
 			>
 				<div
@@ -193,7 +193,7 @@ const renderCellContent = (
 		return (
 			<td
 				key={`${idx}-${colKey}`}
-				className="border-r-[#8A8A8A] border-b-[1px] border-r-[0.67px] last:border-black last:border-r-[1px] bg-white p-[1%]"
+				className="border-r-[#8A8A8A] border-b-[1px] border-r-[0.69px] last:border-black last:border-r-[1px] bg-white p-[1%]"
 			>
 				<div className="text-[10px] @2xs:text-[12px] @xs:text-[14px] @sm:text-[16px] @md:text-[18px]">
 					{content.text}
@@ -208,7 +208,7 @@ const renderCellContent = (
 		return (
 			<td
 				key={`${idx}-${colKey}`}
-				className="border-r-[#8A8A8A] border-b-[1px] border-r-[0.67px] last:border-black last:border-r-[1px] bg-white p-[1%] space-y-1"
+				className="border-r-[#8A8A8A] border-b-[1px] border-r-[0.69px] last:border-black last:border-r-[1px] bg-white p-[1%] space-y-1"
 			>
 				{content.items.map((item, index) => {
 					return (
@@ -229,7 +229,7 @@ const renderCellContent = (
 	return (
 		<td
 			key={`${idx}-${colKey}`}
-			className="border-r-[#8A8A8A] border-b-[1px] border-r-[0.67px] last:border-black last:border-r-[1px] bg-white"
+			className="border-r-[#8A8A8A] border-b-[1px] border-r-[0.69px] last:border-black last:border-r-[1px] bg-white"
 		></td>
 	);
 };
@@ -259,7 +259,7 @@ export default function Table() {
 							<th className="border-black border-r-[1px] border-b-[1px]"></th>
 							{columnHeaders.map((header, idx) => (
 								<th
-									className="p-[3%] text-center border-r-[#8A8A8A] border-b-[1px] border-r-[0.67px] last:border-black last:border-r-[1px]"
+									className="p-[3%] text-center border-r-[#8A8A8A] border-b-[1px] border-r-[0.69px] last:border-black last:border-r-[1px]"
 									key={header + idx}
 								>
 									{header}
@@ -273,7 +273,7 @@ export default function Table() {
 								<tr
 									className={
 										idx == 1
-											? "border-b-[#9B9B9B] border-b-[0.67px]"
+											? "border-b-[#9B9B9B] border-b-[0.69px]"
 											: "border-b-black border-b-1"
 									}
 									key={idx}
