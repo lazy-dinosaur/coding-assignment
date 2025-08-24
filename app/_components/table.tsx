@@ -172,13 +172,13 @@ const renderCellContent = (
 				<div
 					className={`align-middle content-center aspect-square ${content.bgColorClass} ${content.textColorClass} m-1 p-1 rounded-lg @xs:rounded-xl @md:rounded-2xl leading-[1.1] `}
 				>
-					<div className="text-[3px] @2xs:text-[5px] @xs:text-[7px] @sm:text-[9px] @md:text-[11px]">
+					<div className="text-[5px] @2xs:text-[5px] @xs:text-[7px] @sm:text-[9px] @md:text-[11px]">
 						{content.kor}
 					</div>
 					<div className="text-[20px] @2xs:text-[22px] @xs:text-[24px] @sm:text-[26px] @md:text-[28px]">
 						{content.main}
 					</div>
-					<div className="text-[4px] @2xs:text-[6px] @xs:text-[8px] @sm:text-[10px] @md:text-[12px]">
+					<div className="text-[6px] @2xs:text-[7px] @xs:text-[8px] @sm:text-[10px] @md:text-[12px]">
 						{content.sub}
 					</div>
 				</div>
