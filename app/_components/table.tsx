@@ -167,7 +167,11 @@ const renderCellContent = (
 		return (
 			<td
 				key={`${idx}-${colKey}`}
-				className="border-r-[#8A8A8A] border-b-[1px] border-r-[0.5px] last:border-black last:border-r-[1px] bg-white"
+				className={
+					idx == 1
+						? "border-r-[#8A8A8A] border-b-[#9B9B9B] border-b-[0.5px] border-r-[0.5px] last:border-black last:border-r-[1px] bg-white"
+						: "border-r-[#8A8A8A] border-b-[1px] border-r-[0.5px] last:border-black last:border-r-[1px] bg-white"
+				}
 			>
 				<div
 					className={`align-middle content-center aspect-square ${content.bgColorClass} ${content.textColorClass} m-1 p-1 rounded-lg @xs:rounded-xl @md:rounded-2xl leading-[1.1] `}
@@ -240,8 +244,8 @@ export default function Table() {
 	];
 	return (
 		<div className="relative w-full h-full flex justify-center my-[8%]">
-			<div className="relative border-1 w-[92.5%]">
-				<table className="w-full text-black border-black align-middle items-center table-fixed">
+			<div className="relative w-[92.5%]">
+				<table className="w-full text-black align-middle items-center table-fixed">
 					<colgroup>
 						{/* 첫 번째 열만 너비 자동 */}
 						<col className="w-2/14" />
